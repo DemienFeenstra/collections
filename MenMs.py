@@ -18,14 +18,15 @@ print(zakMenM)
 
 # --------------------------------------------------dictionary--------------------------------------------------------------------
 
-DictionaryZak = {
-  "oranje": 0,
-  "blauw" : 0,
-  "groen" : 0,
-  "bruin" : 0
-}
 
-def MaakDictionary(aantalMenM,DictionaryZak):
+
+def inhoudDictionary():
+    DictionaryZak = {
+        "oranje": 0,
+        "blauw" : 0,
+        "groen" : 0,
+        "bruin" : 0
+    }
 
     for i in range(aantalMenM):
         randomMenMkleur = random.choice(kleuren)    #  ---kiest random kleur---
@@ -33,8 +34,14 @@ def MaakDictionary(aantalMenM,DictionaryZak):
    
     return DictionaryZak
 
-MaakDictionary(aantalMenM,DictionaryZak)
-print(DictionaryZak)
+zak  = inhoudDictionary()
+print(zak)
+
+
+
+
+
+
 
 
 
