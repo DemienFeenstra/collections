@@ -38,12 +38,25 @@ zak  = inhoudDictionary()
 print(zak)
 
 
+# -----------------------------------------------sorteren----------------------------------------------------------------
 
+def sorteren(zakMenM):
 
+    sorteerzak = {
+        "oranje": 0,
+        "blauw" : 0,
+        "groen" : 0,
+        "bruin" : 0
+    }
+    
+    for i in zakMenM:
+        sorteerzak[i] +=1
 
+    print(zakMenM)
+    return sorteerzak
 
-
-
+sorteerzak = sorteren(zakMenM)
+print(sorteerzak)
 
 
 
